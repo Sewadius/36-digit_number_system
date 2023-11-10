@@ -1,6 +1,7 @@
 # Main executable file
 from const import GREET, MENU, PROMPT
-import to_x10_number as x10
+import to_x10_num as x10
+import to_x36_num as x36
 
 
 def print_greet() -> None:
@@ -19,6 +20,8 @@ def main():
     match get_choice_menu():
         case '1':                           # Convert x36 to x10 number
             x10.convert_x36_to_x10()
+        case '2':                           # Convert x10 to x36 number
+            x36.convert_x10_to_x36()
 
 
 if __name__ == '__main__':
